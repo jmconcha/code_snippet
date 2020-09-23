@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #container {
+            margin-top: 15px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        button {
+            margin: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Difference between display:none and visiblity: hidden</h3>
+    <p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+    <p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+    <div id="container">
+        <div class="box" id="box1">
+            <p>Box 1</p>
+            <img src="./images/img_5terre.jpg" alt="Italy" style="width:100%">
+            <button onclick="display('remove')">Remove</button>
+        </div>
+        <div class="box" id="box2">
+            <p>Box 2</p>
+            <img src="./images/img_lights.jpg" alt="Lights" style="width:100%">
+            <button onclick="display('hide')">hide</button>
+        </div>
+        <div class="box" id="box3">
+            <p>Box 3</p>
+            <img src="./images/img_forest.jpg" alt="Forest" style="width:100%">
+            <button onclick="display('reset')">Reset All </button>
+        </div>
+    </div>
+    <script>
+        function display(command) {
+            if (command === "remove") {
+                document.getElementById("box1").style.display = "none";
+            }
+            else if (command === "hide") {
+                document.getElementById("box2").style.visibility = "hidden";
+            }
+            else if (command === "reset") {
+                document.getElementById("box1").style.display = "inline-block";
+                document.getElementById("box2").style.visibility = "visible";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

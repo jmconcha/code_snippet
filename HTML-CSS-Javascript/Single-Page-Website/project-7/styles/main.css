@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inconsolata, sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%)
+}
+
+address {
+    font-style: normal;
+    font-size: 18px;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #000000;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    flex: 1;
+}
+
+.main-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.main-nav li a:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+.main-header {
+    margin-top: 49px;
+    border: 1px solid transparent;
+    padding: 0 30px;
+    width: 100%;
+    background-image: url("../images/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-origin: border-box;
+    color: #FFFFFF;
+    filter: grayscale(50%);
+}
+
+.main-header h1 {
+    margin: 40px 0;
+    font-size: 90px;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+}
+
+.main-header p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.main-header span:first-of-type {
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 2px 8px;
+}
+
+main {
+    padding: 20px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .row {
+    padding: 40px 20px;
+    max-width: 740px;
+    width: 100%;
+}
+
+main .row h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+
+main .row h2 span {
+    padding: 2px 8px;
+    background-color: #000000;
+}
+
+main .row p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+main #about p:nth-of-type(3) {
+    border-left: 6px solid #CCCCCC;
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+
+main #about p:nth-of-type(3) q {
+    font-style: italic;
+}
+
+main #menu .menu-list {
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1), -3px -3px 5px rgba(0,0,0,0.1);
+}
+
+main #menu .menu-list .menu-list-category {
+    display: flex;
+    padding: 8px 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+main #menu .menu-list .menu-list-category > button {
+    text-align: center;
+    flex: 1;
+    padding: 2px 0;
+    font-size: 18px;
+}
+
+main #menu .menu-list .menu-list-items {
+    display: none;
+    padding: 0 16px 50px;
+}
+
+main #menu .menu-list .menu-list-items h4 {
+    margin-top: 50px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main #menu .menu-list .menu-list-items p {
+    color: #757575;;
+}
+
+main #where .google-map {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #where p span {
+    padding: 2px 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+main #where .form-control input:not([type="submit"]) {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 18px;
+}
+
+main #where .form-control input[type="submit"] {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 16px;
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+main #where .form-control input[type="submit"]:hover {
+    padding: 10px 16px;
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #F1F1F1;
+    font-size: 18px;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}

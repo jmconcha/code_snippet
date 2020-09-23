@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<input type="number" name="fnum">
+	<input type="number" name="snum">
+	<button id=calculate>click</button>
+	<p id="result"></p>
+	<script type="text/javascript" src="{{ url_for('static', filename='script/jquery-3.4.1.js') }}"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('button#calculate').bind('click', function() {
+			  $.getJSON('/add_numbers', {
+			    fnum: $('input[name="fnum"]').val(),
+			    snum: $('input[name="snum"]').val()
+			  }, function(data) {
+			    $("#result").text(data.result);
+			  });
+			  return false;
+			});
+		})
+		</script>
+	</script>
+</body>
+</html>

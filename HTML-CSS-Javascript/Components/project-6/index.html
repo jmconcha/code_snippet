@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Centered Text</title>
+    <style>
+        div {
+            position: relative;
+            height: 300px;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            opacity: 0.3;
+        }
+        p {
+            color: black;
+            position: absolute;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+        p.left {
+            left: 2%;
+        }
+        p.right {
+            right: 2%;
+        }
+        p#center {
+            width: 100%;
+            top: 45%;
+            text-align: center;
+        }
+        p.top {
+            top: 2%;
+        }
+        p.bottom {
+            bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+
+   <div>
+       <img alt="terra" width="1000" height="300" src="./images/terre.jpg" />
+       <p class="top left">Top Left</p>
+       <p class="top right">Top Right</p>
+       <p id="center">Centered</p>
+       <p class="bottom left">Bottom Left</p>
+       <p class="bottom right">Bottom Right</p>
+   </div>
+
+</body>
+
+</html>

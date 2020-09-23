@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+.box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #fff;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+    }
+    25% {
+        background-color: red;
+        left: calc(100% - 200px);
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        background-color: green;
+        left: calc(100% - 200px);
+        top: calc(100% - 200px);
+        border-radius: 50% 50% 0 0;
+    }
+    75% {
+        background-color: blue;
+        left: 0px;
+        top: calc(100% - 200px);
+        border-radius: 50% 50% 50% 0;
+    }
+    100% {
+        background-color: #fff;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+}

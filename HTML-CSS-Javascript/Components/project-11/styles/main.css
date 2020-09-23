@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu-bar {
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+}
+
+.menu-bar > div {
+    margin: 6px 0;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.close-icon > div.middle-bar {
+    opacity: 0;
+}
+
+.close-icon > div:nth-of-type(1) {
+    transform: rotate(-45deg) translate(-9px, 6px); 
+}
+
+.close-icon > div:nth-of-type(3) {
+    transform: rotate(45deg) translate(-8px, -8px); 
+}

@@ -1,0 +1,154 @@
+* {box-sizing: border-box;}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fc;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.login-form-container {
+    border-radius: 5px;
+    max-width: 1000px;
+    display: flex;
+    border: 20px solid #dce7ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    color: #000;
+}
+
+.login-form-container .form-container {
+    flex: 1;
+    padding: 40px;
+    border-right: 1px solid #ddd;
+}
+
+.login-form-container .features {
+    flex: 1.5;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ecf2ff;
+}
+
+.form-container button {
+    cursor: pointer;
+    width: 100%;
+    margin: 15px 0;
+    border: 2px solid #ecf2ff; 
+    font-size: 14px;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container button img {
+margin-right: 5px;
+width: 20px;
+}
+
+.form-container small {
+    text-align: center;
+    display: block;
+}
+
+.form-control {
+    margin: 20px 0;
+}
+
+.form-control label[for="email"], .form-control label[for="password"] {
+    font-weight: bold;
+}
+
+.form-control input[name="email"], .form-control input[name="password"] {
+    margin-top: 5px;
+}
+
+.checkbox { 
+    display: flex;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.checkbox input {
+    width: initial
+}
+
+.checkbox label {
+    flex: 1;
+    color: #7a7e8c;
+}
+
+.checkbox a {
+    text-decoration: none;
+    color: blue;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #141c2c;
+    color: white;
+    border-color: #141c2c;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form small {
+    margin-top: 20px;
+}
+
+form small a {
+    text-decoration: none;
+    color: blue;
+}
+
+.features {
+    padding: 40px;
+}
+
+.features .feature {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 30px;
+}
+
+.feature .fas {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    color: blue;
+    font-size: 16px;
+}
+
+.feature h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+@media screen and (max-width: 768px) {
+    .login-form-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .login-form-container .form-container {
+        border-right-style: none;
+    }
+}

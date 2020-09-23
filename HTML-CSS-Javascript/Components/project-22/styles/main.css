@@ -1,0 +1,108 @@
+* {box-sizing: border-box;}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open sans", sans-serif;
+    background-color: #f7f8fc;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    height: 200px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.card-body span {
+    margin-top: 0;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #FFF;
+    padding: 2px 10px;
+}
+
+.card-body span.blue {   
+    background-color: #92d4e4;
+}
+
+.card-body span.purple {
+    background-color: #3d1d94;
+}
+
+.card-body span.pink {
+    background-color: #c62bcb;
+}
+
+.card-body h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-body p {
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.hero {
+    margin: 0;
+    margin-top: auto;
+    display: flex;
+}
+
+.hero img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hero figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.hero figcaption h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hero figcaption small {
+    color: #888785;
+}
+
+
+@media screen and (max-width: 940px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <script defer src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="col col-1">
+        <div class="sidenav-container">
+            <header class="main-header">
+                <h1>SOME<br>NAME</h1>
+            </header>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><button class="btn" onclick="showHideSideNav()">CLOSE</button></li>
+                    <li><a onclick="showHideSideNav()" href="#portfolio">PORTFOLIO</a></li>
+                    <li><a onclick="showHideSideNav()" href="#about-me">ABOUT ME</a></li>
+                    <li><a onclick="showHideSideNav()" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="close-btn-container">
+            <button class="btn" onclick="showHideSideNav()"></button>
+        </div>
+    </div>
+
+
+    <div class="col col-2">
+        <main>
+            <header>
+                <h1>SOME NAME</h1>
+
+                <i class="fa fa-bars" onclick="showHideSideNav()"></i>
+            </header>
+
+            <section id="portfolio" class="row row-1">
+                <div class="photo-gallery">
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/natureboy.jpg" width="500" height="600"
+                            alt="A boy surrounded by beautiful nature">
+                        <p>A boy surrounded by beautiful nature</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/boy.jpg" width="500" height="600"
+                            alt="Quiet day at the beach. Cold, but beautiful">
+                        <p>Quiet day at the beach. Cold, but beautiful</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/girl.jpg" width="500" height="600" alt="Canoeing again">
+                        <p>Canoeing again</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/girl_mountain.jpg" width="500" height="600"
+                            alt="What a beautiful scenery this sunset">
+                        <p>What a beautiful scenery this sunset</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/man_bench.jpg" width="500" height="600"
+                            alt="Waiting for the bus in the desert">
+                        <p>Waiting for the bus in the desert</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/girl_train.jpg" width="500" height="600" alt="A girl, and a train passing">
+                        <p>A girl, and a train passing</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/girl.jpg" width="500" height="600" alt="The Beach. Me. Alone. Beautiful">
+                        <p>The Beach. Me. Alone. Beautiful</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/natureboy.jpg" width="500" height="600" alt="Nature again.. At its finest!">
+                        <p>Nature again.. At its finest!</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <span>&times;</span>
+                        <img src="./images/closegirl.jpg" width="500" height="600" alt="What a beautiful day!">
+                        <p>What a beautiful day!</p>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">&laquo</a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">&raquo</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="about-me" class="row row-2">
+                <div class="about-me-wrapper">
+                    <div class="about-me-header">
+                        <h2>About Me</h2>
+
+                        <img src="./images/avatar_hat.jpg" width="500" height="333" alt="Girl with hat">
+                    </div>
+
+                    <div class="about-me-body">
+                        <div class="about-me-details">
+                            <h3>My Name</h3>
+
+                            <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur
+                                adipiscing
+                                elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est
+                                laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore
+                                magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip
+                                ex ea
+                                commodo consequat.</p>
+
+                            <address>
+                                mail: example@example.com
+                                <br>
+                                tel: 5353 35531
+                            </address>
+                        </div>
+
+                        <div class="technical-skills">
+                            <h3>Technical Skills</h3>
+                            <h4>Photography</h4>
+                            <div class="photography percent-bar">
+                                <div class="percent">95%</div>
+                            </div>
+
+                            <h4>Web Design</h4>
+                            <div class="web-design percent-bar">
+                                <div class="percent">85%</div>
+                            </div>
+
+                            <h4>Photoshop</h4>
+                            <div class="photoshop percent-bar">
+                                <div class="percent">80%</div>
+                            </div>
+
+                            <button class="btn">Download Resume</button>
+                        </div>
+
+                        <div class="payments">
+                            <h3>How much I charge</h3>
+                            <div class="payment-wrapper">
+                                <div class="basic-payment">
+                                    <div class="payment-header">
+                                        <h4>Basic</h4>
+                                    </div>
+
+                                    <div class="payment-body">
+                                        <p>Web Design</p>
+                                        <p>Photography</p>
+                                        <p>5GB Storage</p>
+                                        <p>Mail Support</p>
+                                        <p><strong>$10</strong> <br> <small>per month</small></p>
+
+                                        <p><button class="btn">Sign Up</button></p>
+                                    </div>
+                                </div>
+
+                                <div class="pro-payment">
+                                    <div class="payment-header">
+                                        <h4>Pro</h4>
+                                    </div>
+
+                                    <div class="payment-body">
+                                        <p>Web Design</p>
+                                        <p>Photography</p>
+                                        <p>50GB Storage</p>
+                                        <p>Endless Support</p>
+                                        <p><strong>$25</strong> <br> <small>per month</small></p>
+
+                                        <p><button class="btn">Sign Up</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="row row-3">
+                <div class="contact-wrapper">
+                    <div class="contact-header">
+                        <h2>Contact Me</h2>
+                        <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love
+                            meeting
+                            new people!</p>
+                    </div>
+
+                    <div class="contact-body">
+                        <form action="#" method="POST">
+                            <div class="form-control">
+                                <label for="name">Name</label>
+                                <input id="name" type="text">
+                            </div>
+
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input id="email" type="email">
+                            </div>
+
+                            <div class="form-control">
+                                <label for="message">Message</label>
+                                <input id="message" type="text">
+                            </div>
+
+                            <div class="form-control">
+                                <input class="btn" type="submit" value="Send Message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="row row-1">
+                <div class="col col-1">
+                    <h2>INFO</h2>
+
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                        ultricies
+                        congue gravida diam non fringilla.</p>
+                </div>
+
+                <div class="col col-2">
+                    <h2>BLOG POSTS</h2>
+
+                    <div class="blog-posts">
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <img src="./images/gondol.jpg" width="300" height="300" alt="Gondol">
+                            </div>
+
+                            <div class="post-details">
+                                <h3>Lorem</h3>
+
+                                <p>Sed mattis nuncs</p>
+                            </div>
+                        </div>
+
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <img src="./images/workshop.jpg" width="300" height="300" alt="Workshop">
+                            </div>
+
+                            <div class="post-details">
+                                <h3>Ipsum</h3>
+
+                                <p>Praes tinci sed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-3">
+                    <h2>POPULAR TAGS</h2>
+
+                    <div class="tags">
+                        <span class="tag popular">Travel</span>
+                        <span class="tag">New York</span>
+                        <span class="tag">London</span>
+                        <span class="tag">IKEA</span>
+                        <span class="tag">NORWAY</span>
+                        <span class="tag">DIY</span>
+                        <span class="tag">Ideas</span>
+                        <span class="tag">Baby</span>
+                        <span class="tag">Family</span>
+                        <span class="tag">News</span>
+                        <span class="tag">Clothing</span>
+                        <span class="tag">Shopping</span>
+                        <span class="tag">Sports</span>
+                        <span class="tag">Games</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-2">
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,593 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: #777777;
+    background-color: #FFFFFF;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.main-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 13px 16px;
+    text-decoration: none;
+    color: #777777;
+    cursor: pointer;
+}
+
+.main-nav li a:hover {
+    color: #000000 !important;
+    background-color: #CCCCCC  !important;
+}
+
+.main-nav li:nth-of-type(5) {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav li .fa-search {
+    display: block;
+    padding: 13px 16px;
+    color: #777777;
+    cursor: pointer;
+}
+
+.main-nav li .fa-search:hover {
+    color: #FFFFFF;
+    background-color: #F44336;
+}
+
+.main-nav li:last-of-type {
+    display: none;
+}
+
+.main-nav li .fa-bars {
+    height: 100%;
+    display: block;
+    padding: 13px 16px;
+    color: #777777;
+    cursor: pointer;
+}
+
+.main-nav li .fa-bars:hover {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 637px;
+    background-image: url("../images/parallax1.jpg");
+}
+
+.hero-image {
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.main-header h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    padding: 12px 24px;
+    background-color: #000000;
+    animation: fade-effect 0.5s ease-out;
+}
+
+@keyframes fade-effect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.slide-down {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    animation: slide-down 0.5s;
+}
+
+.slide-down li a,
+.slide-down li .fa {
+    color: #000000;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translate(0, -100%);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+main .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me, .my-work, .where-i-work {
+    padding: 64px 16px;
+    max-width: 948px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about .about-photography h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+#about .about-photography p:first-of-type {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#about .personal-info {
+    margin: 50px 24px;
+    display: flex;
+}
+
+#about .personal-info figure {
+    flex: 1;
+    margin-right: 48px;
+}
+
+#about .personal-info figcaption {
+    margin-bottom: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#about .personal-info figcaption .fa-user {
+    margin-right: 10px;
+}
+
+#about .personal-info figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+    border-radius: 5px;
+}
+
+#about .personal-info figure img:hover {
+    opacity: 1;
+}
+
+#about .personal-info p {
+    flex: 1;
+}
+
+#about .good-at {
+    width: 100%;
+}
+
+#about .good-at p:first-of-type {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .good-at p:not(:first-of-type) {
+    letter-spacing: 10px;
+}
+
+#about .good-at .percent {
+    margin: 15px 0;
+    height: 35px;
+    background-color: #F1F1F1;
+    font-size: 15px;
+}
+
+#about .good-at .percent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+#about .good-at .percent .photography {
+    width: 90%;
+}
+
+#about .good-at .percent .web-design {
+    width: 85%;
+}
+
+#about .good-at .percent .photoshop {
+    width: 75%;
+}
+    
+#about .records {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #616161;
+}
+
+#about .records > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .records span {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+main .hero-image {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero-image h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #FFFFFF;
+    letter-spacing: 10px;
+}
+
+#portfolio .hero-image {
+    background-image: url("../images/parallax2.jpg");
+}
+
+#contact .hero-image {
+    background-image: url("../images/parallax3.jpg");
+}
+
+h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#portfolio .my-work p {
+    font-style: italic;
+}
+
+#portfolio .my-work .image-gallery {
+    width: 100%;
+    margin: 45px 0;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#portfolio .my-work .image-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#portfolio .my-work .image-gallery img:hover {
+    opacity: 0.75;
+}
+
+#portfolio .my-work .image-gallery p {
+    display: none;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #000000;
+}
+
+.image-preview .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: image-show 0.5s forwards;
+}
+
+.image-preview .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image-preview .image-title {
+    display: block;
+    margin: 18px 0;
+    font-style: normal;
+    animation: font-effect 0.5s forwards
+}
+
+@keyframes image-show {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@keyframes font-effect {
+    from {font-size: 1px;}
+
+    to {font-size: 18px;}
+}
+
+.btn {
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+
+.btn-ghost {
+    padding: 16px 24px;
+    color: #000000;
+    background-color: #F1F1F1;
+}
+
+.btn-ghost:hover {
+    background-color: #CCCCCC;
+}
+
+.btn-black {
+    padding: 12px 16px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.btn-black:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+#contact .where-i-work {
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#contact .where-i-work .contact-header p {
+    text-align: center;
+}
+
+#contact .where-i-work .contact-body {
+    display: flex;
+}
+
+#contact .contact-body .map {
+    flex: 1;
+    height: 400px;
+}
+
+#contact .contact-body .contact-details {
+    flex: 2;
+}
+
+#contact .contact-details address {
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+#contact .contact-details address .fa {
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#contact .contact-details address .fa:hover {
+    color: #000000;
+}
+
+#contact .contact-details p {
+    margin: 20px 0;
+}
+
+#contact .contact-body form {
+    display: grid;
+    grid-gap: 5px 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contact form > .form-control:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+#contact form > .form-control:nth-child(4) {
+    margin-top: 5px;
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+#contact .contact-body .form-control input {
+    display: block;
+    width: 100%;
+    padding: 13px 8px;
+    font-size: 15px;
+}
+
+footer {
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+footer:hover {
+    background-color: #000000;
+}
+
+footer .btn {
+    padding: 12px 16px;
+    color: #666666;
+    text-decoration: none;
+}
+
+footer:hover .btn {
+    color: #000000;
+}
+
+footer .btn .fa {
+    margin-right: 10px;
+}
+
+footer .links {
+    margin: 25px 0;
+}
+
+footer .links .fa {
+    font-size: 24px;
+}
+
+footer a:hover {
+    color: #4ACF50
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav ul li {
+        display: none;
+    }
+
+    .main-nav ul li:first-of-type {
+        display: block;
+    }
+    .main-nav li:nth-of-type(6) {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-nav li:nth-of-type(5) {
+        display: none;
+    }
+
+    .show-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .show-nav ul li:not(:last-of-type) .fa {
+        display: none;
+    }
+
+    .show-nav ul li:nth-of-type(2),
+    .show-nav ul li:nth-of-type(3),
+    .show-nav ul li:nth-of-type(4) {
+        display: block;
+        width: 100%;
+    }
+
+    .show-nav ul li:last-of-type {
+        height: 43px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .show-nav li:not(:first-of-type) a {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+
+    .main-header h1 span {
+        display: none;
+    }
+
+    #about .personal-info figure { 
+        margin-right: 0;
+    }
+
+    #about .personal-info p {
+        display: none;
+    }
+
+    #about .records {
+        flex-direction: column;
+    }
+
+    #about .records > div:not(:first-of-type) {
+        margin-top: 40px;
+    }
+
+    #portfolio .my-work .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .where-i-work .contact-body {
+        flex-direction: column;
+    }
+
+    #contact .contact-body form {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .contact-body .map {
+        flex: 400px;
+    }
+
+    #contact form > .form-control:nth-child(3) {
+        grid-column: 1 / 2;
+    }
+    
+    #contact form > .form-control:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+}

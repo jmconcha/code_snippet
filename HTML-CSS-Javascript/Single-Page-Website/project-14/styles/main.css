@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:"Segoe UI", Arial, sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.main-header{
+    position: relative;
+}
+
+.hero-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner .hero-banner-content {
+    padding: 25px 24px;
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+.hero-banner .hero-banner-content h1 {
+    margin-bottom: 22px;
+    font-size: 48px;
+}
+
+.hero-banner .hero-banner-content h2 {
+    font-size: 24px;
+}
+
+.main-header .main-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #F1F1F1;
+    transform: translate(-50%, 50%);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.main-nav li a  {
+    display: block;
+    padding: 10px 16px;
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.main-nav li a:hover  {
+    background-color: #CCCCCC;
+}
+
+main {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .row {
+    max-width: 980px;
+    flex: 100%;
+    width: 100%;
+}
+
+#portfolio img {
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding: 25px;
+    background-color: #F1F1F1;
+}
+
+#contact h2 {
+    margin: 20px 0;
+    letter-spacing: initial;
+}
+
+#contact p {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#contact .form-control {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .form-control label {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+#contact .form-control input {
+    padding: 8px;
+}
+
+#contact .form-control .btn {
+    padding: 10px 16px;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #616161;
+    cursor: pointer;
+}
+
+#contact .form-control .btn:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+footer {
+    padding: 70px 0;
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .hero-banner .hero-banner-content h1 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .hero-banner .hero-banner-content h2 {
+        display: none;
+    }
+
+    .main-header .main-nav {
+        display: flex;
+        justify-content: center;
+        padding: 18px 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+     }
+
+     .main-nav ul {
+        border-radius: 0;
+     }
+}

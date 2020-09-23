@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.row h2 {
+    margin: 0;
+    background-color: #eee;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.row h2::after {
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.show-icon::after {
+    content: '\002B';
+}
+
+.hide-icon::after {
+    content: '\2212';
+}
+
+.show h2, .row:hover h2 {
+    background-color: #ccc;
+}
+
+.row p {
+    display: none;
+    padding: 15px;
+}
+
+.show p {
+    display: block;
+}

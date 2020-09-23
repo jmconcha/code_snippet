@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, Arial, sans-serif;
+    color: #666666;
+    background-color: #FFFFFF;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2 {
+    font-weight: normal;
+    letter-spacing: 5px;
+    word-wrap: break-word;
+}
+
+.main-header {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-header h2 {
+    font-size: 24px;
+}
+
+.main-header h1 {
+    margin: 30px 0 50px;
+    font-size: 36px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul {
+    display: flex;
+    border: 1px solid #CCCCCC;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+}
+
+.main-nav li a.active {
+    background-color: #F1F1F1;
+}
+
+.main-nav li a:hover {
+    background-color: #CCCCCC;
+}
+
+.photo-gallery {
+    padding: 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-gallery .col {
+    padding: 0 8px;
+    flex: 50%;
+    max-width: 50%;
+}
+
+.photo-gallery .col img {
+    margin-top: 16px;
+}
+
+footer {
+    margin-top: 150px;
+    padding: 80px 0;
+    color: #000000;
+    text-align: center;
+    background-color: #F1F1F1;
+}
+
+footer .social-media-links .fa {
+    font-size: 18px;
+}
+
+footer .social-media-links .fa:hover {
+    color: #666666;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+footer a {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav ul li:last-of-type {
+        display: none;
+    }
+
+    .photo-gallery .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main-nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .main-nav ul li:last-of-type {
+        display: block;
+        border-bottom: none;
+    }
+}

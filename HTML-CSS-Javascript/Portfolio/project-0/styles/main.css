@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	border: none;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: linear-gradient(to right, #7200fc, #c200fe) no-repeat;
+	overflow: hidden;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+	margin: auto;
+	margin-top: 2.5%;
+	width: 95%;
+	height: 90%;
+	background-color: #ffffff;
+}
+
+.sidebar {
+	background-color: #dce1f6;
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+
+.sidebar figure .img {
+	margin: 25px auto;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.sidebar figure h2 {
+	text-align: center;
+	margin: 20px;
+}
+
+.sidebar ul {
+	margin-top: 20px;
+	list-style-type: none;
+	background-color: #e9ecf9;
+}
+
+.sidebar ul a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 20px 0 20px 40px;
+}
+
+.sidebar ul a:hover {
+	background-color: #ffffff;
+}
+
+.main-content {
+	background: url("../images/bg.svg") no-repeat right bottom;
+	float: left;
+	width: 80%;
+	height: 100%;
+	padding: 0 80px;
+}
+
+.main-content h1 {
+	margin-top: 150px;
+	margin-bottom: 25px;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.main-content p {
+	line-height: 40px;
+}
+
+.main-content .btn {
+	display: inline-block;
+	background-color: #0e7fff;
+	color: white;
+	text-decoration: none;
+	margin-top: 45px;
+	padding: 20px 40px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}

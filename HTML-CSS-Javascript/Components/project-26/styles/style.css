@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12475f;
+    color: white;
+    text-align: center;
+}
+
+header {
+    position: relative; 
+    height: 250px;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {
+        top: -40px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+section p {
+    position: relative;
+    padding: 20px;
+    animation-name: par;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes par {
+    0% {
+        left: -400px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none; 
+    color: white;
+    padding: 14px 16px;
+    border: 1px solid white;
+    opacity: 0;
+    animation-name: anc;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+a:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes anc {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+

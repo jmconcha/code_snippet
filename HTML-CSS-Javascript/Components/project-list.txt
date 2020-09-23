@@ -1,0 +1,32 @@
+Project Number | Project Title | Project Status | Date Created | Author
+0 | navbar | finished | April 28, 2020 | MC
+1 | ball | finished | May 1, 2020 | MC
+2 | progress-bar | finished | May 5, 2020 | MC
+3 | links | finished | May 6, 2020 | MC
+4 | tables | finished | May 6, 2020 | MC
+5 | displays | finished | May 6, 2020 | MC
+6 | centered-text | finished | May 6, 2020 | MC
+7 | image-gallery | finished | May 11, 2020 | MC
+8 | simple-portfolio | finished | June 27, 2020 | MC
+9 | hero-image | finished | July 6, 2020 | MC
+10 | icon-bar | finished | July 7, 2020 | MC
+11 | menu-icon | finished | July 9, 2020 | MC
+12 | accordion | finished | July 10, 2020 | MC
+13 | tabs | finished | July 17, 2020 | MC
+14 | vertical-tabs | finished | July 17, 2020 | MC
+15 | tab-headers | finished | July 18, 2020 | MC
+16 | full-page-tabs | finished | July 18, 2020 | MC
+17 | top-navigation-bar | finished | July 20, 2020 | MC
+18 | responsive-top-navigation-bar | finished | July 20, 2020 | MC
+19 | tooltips | finished | July 24, 2020 | MC
+20 | side-navigations | finished | July 24, 2020 | MC
+21 | responsive-website-using-flexbox | finished | July 27, 2020 | MC
+22 | blog-cards | finished | July 28, 2020 | MC
+23 | login | finished | July 28, 2020 | MC
+24 | animations-and-keyframes | finished | Not Recorded | MC
+25 | css-grid | finished | July 28, 2020 | MC
+26 | home-page-animation | finished | July 28, 2020 | MC
+27 | transitions | finished | July 28, 2020 | MC
+28 | flexbox | finished | July 28, 2020 | MC
+29 | ads-manager | finished | August 4, 2020 | MC
+30 | css-grid-with-image-span | finished | August 4, 2020 | MC

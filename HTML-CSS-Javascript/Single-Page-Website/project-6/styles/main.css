@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+ form input[type="email"] {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px 8px;
+}
+
+form .btn-subscribe {
+    color: #FFFFFF;
+    background-color: #F44336;
+}
+
+form .btn-subscribe:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 16px;
+    font-size: 15px;
+    cursor: pointer
+}
+
+.subscribe-modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.subscribe-modal {
+    padding: 50px;
+    margin-top: -90px;
+    width: 85%;
+    background-color: #FFFFFF;
+}
+
+.subscribe-modal h2 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.subscribe-modal p {
+    font-family: "Open sans";
+}
+
+.subscribe-modal .btn-subscribe {
+    padding: 14px 24px;
+}
+
+.social-media-links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #000000;
+}
+
+.social-media-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-media-links li a {
+    display: block;
+    padding: 10px 16px;
+    color: #FFFFFF;
+}
+
+.social-media-links div {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-links .btn-search {
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.social-media-links li a:hover,
+.social-media-links .btn-search:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+main {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.hero-banner .hero-banner-header {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-banner h1 {
+    font-size: 48px;
+    padding: 20px 0;
+}
+
+.hero-banner p {
+    font-size: 16px;
+}
+
+.hero-banner p span {
+    padding: 2px 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.hero-banner h2 {
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.hero-banner h3 {
+    font-size: 64px;
+    margin: 25px 0 20px;
+}
+
+.hero-banner .hero-banner-body { 
+    position: relative;
+}
+
+.hero-banner .hero-banner-body .hero-banner-content { 
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    color: #FFFFFF;
+}
+
+.hero-banner .hero-banner-content .btn-subscribe {
+    padding: 14px 24px;
+    font-size: 18px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.hero-banner .hero-banner-content .btn-subscribe:hover {
+    background-color: #CCCCCC;
+}
+
+.main-content {
+    padding: 30px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr 1fr;
+    background-color: #F1F1F1;
+}
+
+.main-content .blog-post {
+    margin-bottom: 30px;
+    padding: 25px 25px 10px 25px;
+    background-color: #FFFFFF;
+}
+
+.main-content .blog-post-header .blog-post-title {
+    text-align: center;
+}
+
+.main-content .blog-post-title h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.main-content .blog-post-title h3 {
+    margin: 15px 0 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.main-content .blog-post-body p:first-child {
+    margin-top: 30px;
+}
+
+.main-content .blog-post-body p {
+    margin-top: 15px;
+    font-family: "Open Sans";
+}
+
+.main-content .blog-post-body .blog-post-status {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans";
+}
+
+.main-content .blog-post-status .btn-like {
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+.main-content .blog-post-status .btn-replies {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.main-content .blog-post-status .btn-replies span {
+    margin-left: 10px;
+    padding: 2px 8px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.main-content .blog-post-status .btn-like .fa {
+    margin-right: 10px;
+}
+
+.main-content .blog-post-status .btn:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+.main-content .blog-post-comments {
+    display: none;
+    margin-top: 50px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.main-content .blog-post-comments .comment {
+    margin: 25px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-content .hero-image img {
+    width: 90px;
+    margin-right: 10px;
+}
+
+.main-content .user-info h4 {
+    font-size: 20px;
+}
+
+.main-content .user-info h4 time {
+    font-size: 15px;
+    color: #808080;
+    font-weight: normal;
+}
+
+.side-bar > div {
+    margin-bottom: 30px;
+}
+
+.side-bar .content-header h2 {
+    padding: 20px 16px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.side-bar .content-body {
+    padding: 20px 16px;
+    background-color: #FFFFFF;
+}
+
+.side-bar .about-me img {
+    filter: grayscale(80%);
+}
+
+.side-bar .about-me .content-body {
+    padding-top: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.side-bar .popular-posts img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.side-bar .popular-posts .content-body {
+    padding: 0;
+}
+
+.side-bar .popular-posts .post {
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar .popular-posts .post:not(:last-of-type) {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.side-bar .popular-posts .post:hover {
+    background-color: #CCCCCC;
+}
+
+.side-bar .popular-posts .post-body h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.side-bar .advertise .content-body .ad-content {
+    padding: 100px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar .tags .content-body .tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 2px 8px;
+    font-size: 12px;
+    background-color: #F1F1F1;
+}
+
+.side-bar .tags .content-body .current-tag {
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.side-bar .inspiration .content-body {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.side-bar .follow-me .content-body ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.side-bar .follow-me .content-body a {
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.side-bar .follow-me .content-body a:hover {
+    color: #CCCCCC;
+}
+
+footer {
+    padding: 30px;
+    width: 100%;
+    background-color: #616161;
+}
+
+footer .btn {
+    display: inline-block;
+    padding: 14px 24px;
+    font-family: "Open sans";
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+footer .btn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+footer .btn .fa {
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 30px 0;
+    color: #FFFFFF;
+}
+
+footer p a {
+    color: #FFFFFF;
+}
+
+footer p a:hover {
+    color: #4CAF50;
+}
+
+@media screen and (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr;   
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social-media-links {
+        display: none;
+    }
+
+    .hero-banner h3 {
+        display: none;
+    }
+
+    .main-content .blog-post-comments .comment {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-content .hero-image img {
+        margin-bottom: 20px;
+    }
+
+    .subscribe-modal {
+        width: 96%;
+        margin-top: -140px;
+    }
+}

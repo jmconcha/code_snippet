@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-headers {
+    display: flex;
+}
+
+.tablinks {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: #555;
+    color: #FFF;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.tablinks:hover {
+    background-color: #777;
+}
+
+.tab-content {
+    display: none;
+    color: #FFF;
+    padding: 50px 25px 0;
+    height: calc(100% - 47.98px);
+}
+
+.tab-content h3 {
+    margin: 0;
+}
+
+#Home {
+    background-color: #FF0000;
+}
+
+#News {
+    background-color: #008000;
+}
+
+#Contact {
+    background-color: #0000FF;
+}
+
+#About {
+    background-color: #FFA500;
+}

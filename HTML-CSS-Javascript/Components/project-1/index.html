@@ -1,0 +1,58 @@
+<!--Creating a ball using HTML and CSS-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        div#outer {
+            width: 100px;
+            height: 100px;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 50%;
+            margin: 50px auto;
+            background-color: #ff8c1a;
+            overflow: hidden;
+        }
+        div#left, div#center, div#right {
+            display: inline-block;
+        }
+        div#left, div#right {
+            height: 90px;
+            width: 41px;
+            background-color: green;
+        }
+        div#left {
+            border-right-style: solid;
+            border-right-width: 4px;
+            border-radius:  0 50% 50% 0;
+        }
+        div#center {
+            width: 2px;
+            height: 100px;
+            background-color: black;
+        }
+        div#right {
+            border-left-style: solid;
+            border-left-width: 4px;
+            border-radius:  50% 0 0 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="outer">
+        <div id="left"></div>
+        <div id="center"></div>
+        <div id="right"></div>
+    </div>
+
+</body>
+
+</html>
+

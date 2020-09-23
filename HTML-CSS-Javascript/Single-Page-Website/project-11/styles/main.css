@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 53px;
+    font-family: Raleway, sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    filter: grayscale(50%);
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-black {
+    align-self: center;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.btn-red {
+    color: #FFFFFF;
+    background-color: #F44336;
+}
+
+.btn-green {
+    color: #FFFFFF;
+    background-color: #4CAF50;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+.main-nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+.main-nav .bottom-nav {
+    padding: 8px 16px;
+    display: flex;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.main-nav .bottom-nav:hover {
+    background-color: #FFFFFF;
+}
+
+.main-nav .bottom-nav li {
+    flex: 1;
+}
+
+
+.main-nav li a {
+    display: block;
+    padding: 10px 16px;
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-nav li a:hover {
+    background-color: #CCCCCC;
+}
+
+.main-nav li:last-of-type a:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+main .row-1,
+main .row-2 {
+    background-color: #ffdddd;
+    filter: grayscale(50%);
+}
+
+main .hero-banner {
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .row-1 .hero-banner {
+    background-image: url("../images/wedding_couple.jpg");
+}
+
+main .row-2 .hero-banner {
+    background-image: url("../images/flowers.jpg");
+}
+
+main .hero-banner h1,
+main .hero-banner h2 {
+    font-size: 64px;
+    font-weight: normal;
+}
+
+main .hero-banner p {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+main .hero-banner time {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .row .section-content {
+    max-width: 980px;
+    margin: auto;
+    padding: 80px 15px;
+}
+
+main .row .section-content h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #757575;
+    text-align: center;
+}
+
+main .row .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .row-1 .card-body p {
+    margin: 40px 0;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2;
+}
+
+main .row .card-body .btn a {
+    display: block;
+    padding: 20px 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main .row .card-body .btn a:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+main .row-2 .card-body {
+    flex-direction: row;
+}
+
+main .row-2 .card-body > div {
+    flex: 1;
+    text-align: center;
+}
+
+main .row-2 .card-body h3 {
+    margin: 80px 0 20px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+main .row-2 .card-body p {
+    font-size: 15px;
+}
+
+main .row-2 .card-body p:first-of-type {
+    margin: 30px 0;
+}
+
+main .row-3 {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffdddd;
+}
+
+main .row-3 h2 {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+main .row-3 p {
+    margin: 40px 0 30px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+main .row-3 .btn {
+    padding: 18px 60px;
+    opacity: 0.6;
+    font-size: 24px;
+}
+
+footer {
+    font-size: 15px;
+    padding: 40px 0;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+.rsvp-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.show-rsvp-modal {
+    display: flex;
+}
+
+.rsvp-modal .modal {
+    margin-top: -10%;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #FFFFFF;
+}
+
+.show-rsvp-modal .modal {
+    animation: fade-in-effect 0.5s;
+}
+
+@keyframes fade-in-effect {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.rsvp-modal h2 {
+    margin: 20px 0 30px;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.rsvp-modal p,
+.rsvp-modal em {
+    display: block;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.rsvp-modal .form-control input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.rsvp-modal .form-control:last-of-type {
+    display: flex;
+}
+
+.rsvp-modal .form-control:last-of-type > input {
+    flex: 1;
+}
+
+.rsvp-modal .form-control .btn {
+    padding: 10px 8px;
+    font-size: 15px;
+    border-radius: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    main .row-2 .card-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rsvp-modal .form-control:last-of-type {
+        flex-direction: column;
+    }
+}

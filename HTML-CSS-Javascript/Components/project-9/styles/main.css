@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hero-image {
+	width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../images/photographer.jpg');
+    background-size: cover;
+	font-family: 'Helvetica', Arial, sans-serif;
+    color: #fff;
+}
+.hero-image button {
+	outline: none;
+    border: none;
+    background-color: #ccc;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.hero-image button:hover {
+	background-color: #777;
+    color: #fff;
+}

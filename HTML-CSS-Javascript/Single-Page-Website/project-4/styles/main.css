@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    color: #000000;
+    background-color: #F1F1F1;
+}
+
+.main-header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-header p span {
+    display: inline-block;
+    padding: 2px 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+p {
+    font-size: 15px;
+}
+
+.row-1 {
+    display: flex;
+}
+
+.row-1 .col {
+    margin: 15px;
+}
+
+.col-1 article {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+.col-1 .article-header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.col-1 .article-body {
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+
+.col-1 .article-body h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.col-1 .article-body .title-description {
+    font-size: 18px;
+}
+
+.col-1 .article-body > p:last-of-type {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+.col-1 .article-body div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 .article-body div .btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+.col-1 .article-body div .btn:hover {
+    background-color: #CCCCCC;
+}
+
+.col-1 .article-body div p {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.col-1 .article-body div p span {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 8px;
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.col-1 .article-body div p span.zero {
+    border-radius: 0;
+}
+
+.col-2 .about-me img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.col-2 > div {
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.col-2 .about-me figcaption {
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+
+.col-2 h2 {
+    font-size: 20px;
+}
+
+.col-2 .about-me figcaption p {
+    margin: 20px 0 10px;
+    line-height: 1.7;
+}
+
+.col-2 .popular-posts h2,
+.col-2 .tags h2 {
+    padding: 20px 15px;
+    font-weight: normal;
+    background-color: #F1F1F1;
+}
+
+.col-2 .post {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.col-2 .post:hover {
+    background-color: #CCCCCC;
+}
+
+.col-2 .post img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: midle;
+}
+
+.col-2 .post-body h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.col-2 .tags {
+    background-color: #FFFFFF;
+}
+
+.col-2 .tags .tag {
+    padding: 15px;
+    font-size: 12px;
+}
+
+.col-2 .tags .tag span {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #F1F1F1;
+    margin-bottom: 15px;
+}
+
+.col-2 .tags .tag .highlight {
+    font-size: 15px;
+    color: #F1F1F1;
+    background-color: #000000;
+}
+
+footer {
+    padding: 15px;
+    height: 178px;
+    color: #FFFFFF;
+    background-color: #616161;
+}
+
+footer .navigation {
+    margin: 20px 0;
+}
+
+footer .navigation .btn {
+    display: inline-block;
+    padding: 14px 24px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+footer .navigation .btn-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+footer .navigation .btn:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+footer p {
+    margin-top: 35px;
+}
+
+footer p a { 
+    color: #FFFFFF;
+}
+
+footer p a:hover {
+    color: #4ACF50;
+}
+
+
+@media screen and (max-width: 992px) {
+    .row-1 {
+        flex-direction: column;
+    }   
+}

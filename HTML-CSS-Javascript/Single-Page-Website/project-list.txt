@@ -1,0 +1,18 @@
+Project Number | Project Title | Project Status | Date Created | Author
+0 | band | finished | August 5, 2020 | MC
+1 | gourmet-catering | finished | August 6, 2020 | MC
+2 | architect | finished | August 7, 2020 | MC
+3 | parallax | finished | August 10, 2020 | MC
+4 | blog | finished | August 12, 2020 | MC
+5 | food-blog | finished | August 13, 2020 | MC
+6 | fashion-blog | finished | August 14, 2020 | MC
+7 | cafe-blog | finished | August 15, 2020 | MC
+8 | clothing-store-blog | finished | August 17, 2020 | MC
+9 | cv | finished | August 19, 2020 | MC
+10 | coming-soon | finished | August 20, 2020 | MC
+11 | wedding-invitation | finished | August 20, 2020 | MC
+12 | photo | finished | August 21, 2020 | MC
+13 | black-and-white | finished | August 22, 2020 | MC
+14 | photo-portfolio | finished | August 22, 2020 | MC
+15 | nature-portfolio | finished | August 22, 2020 | MC
+16 | people-portfolio | finished | September 12, 2020 | MC

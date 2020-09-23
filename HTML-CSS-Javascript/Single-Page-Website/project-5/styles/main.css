@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: Karma, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1;
+    font-size: 24px;
+    background-color: #FFFFFF;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .btn-open-nav {
+    padding: 18px 16px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #FFFFFF;
+}
+
+header .btn-open-nav:hover {
+    background-color: #CCCCCC;
+}
+
+.main-nav { 
+    position: fixed;
+    left: -51%;
+    top: 0;
+    z-index: 2;
+    width: 40%;
+    height: 100vh;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.show-nav {
+    left: 0;
+    transition: left 0.5s;
+}
+
+.main-nav .btn-close-nav,
+.main-nav a {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.main-nav .btn-close-nav:hover,
+.main-nav a:hover {
+    background-color: #CCCCCC;
+}
+
+header h1 {
+    padding: 18px 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+header .mail {
+    padding: 18px 0;
+}
+
+#menu {
+    margin-top: 80px;
+    padding: 32px 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#menu .food {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.card-menu {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-menu .card-header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-menu .card-body {
+    height: auto;
+    border-top-style: none;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.card-menu .card-body h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.card-menu .card-body p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#menu .menu-nav {
+    margin-top: 32px;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu .menu-nav a {
+    display: inline-block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+#menu .menu-nav a:hover,
+#menu .menu-nav a.active {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+
+#menu .menu-nav a.active:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}   
+
+#about {
+    padding: 32px 16px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+}
+
+#about .about-header,
+#about .about-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .about-header h2 {
+    margin: 30px 0;
+    font-weight: normal;
+}
+
+#about .about-header img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+#about .about-body {
+    margin: 40px 0 60px;
+}
+
+#about .about-body h3 {
+    font-size: 20px;
+}
+
+#about .about-body em {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+#about .about-body p {
+    font-size: 15px;
+}
+ 
+/* footer, footer * {border: 1px solid red} */
+
+footer {
+    padding: 32px 6px;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+}
+
+footer > div {
+    flex: 1;
+    padding: 20px 10px;
+}
+
+footer h2 {
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #000000;
+}
+
+.footer a:hover {
+    color: #4ACF50;
+}
+
+.blog-posts .post:first-of-type {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.blog-posts .post {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.blog-posts .post:hover {
+    background-color: #CCCCCC;
+}
+
+.blog-posts .post-header img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.blog-posts .post-body h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.blog-posts .post-body p {
+    font-size: 15px;
+}
+
+.popular-tags .tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: serif;
+    font-size: 12px;
+    padding: 2px 8px;
+    color: #FFFFFF;
+    background-color: #616161;
+}
+
+.popular-tags .active {
+    font-size: 15px;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        width: 50%;
+    }
+
+    .card-menu {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

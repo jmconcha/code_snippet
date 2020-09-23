@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+body > .col-1 {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+}
+
+.col-1 header {
+    margin: 10px 0;
+}
+
+.col-1 header h1 {
+    padding: 85px 0 60px;
+    font-size: 24px;
+    color: #757575;
+    line-height: 1.5;
+}
+
+.col-1 .main-nav li:first-child {
+    display: none;    
+}
+
+.col-1 .main-nav li a,
+.col-1 .main-nav li .btn {
+    display: block;
+    color: #757575;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.col-1 .main-nav li .btn {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.col-1 .main-nav li a:hover,
+.col-1 .main-nav li .btn:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+.col-1 .close-btn-container {
+    display: none;
+}
+
+.col-2 {
+    margin-left: 300px;
+}
+
+.col-2 main {
+    background-color: #F2F2F2;
+}
+
+.col-2 header {
+    display: none;
+}
+
+#portfolio .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#portfolio .image-preview {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #000000;
+}
+
+#portfolio .photo-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#portfolio .photo-card img:hover {
+    opacity: 1;
+}
+
+#portfolio .image-preview img {
+    width: initial;
+    max-width: 100%;
+    margin-top: 52px;
+    opacity: 1;
+    cursor: initial;
+    animation: zoom-in-effect 0.3s ease-out;
+}
+
+#portfolio .photo-card span,
+#portfolio .photo-card p {
+    display: none;
+}
+
+#portfolio .image-preview span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#portfolio .image-preview span:hover {
+    color: black;
+    background-color: #CCCCCC;
+}
+
+#portfolio .image-preview p {
+    padding: 20px 0 70px;
+    display: block;
+    color: #FFFFFF;
+    animation: zoom-in-effect 0.3s ease-out;
+}
+
+@keyframes zoom-in-effect {
+    from {
+        transform: scale(0);
+    }
+    
+    to {
+        transform: scale(1);
+    }
+}
+
+#portfolio .pagination {
+    padding: 30px 0;
+}
+
+#portfolio .pagination ul {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio ul li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+#portfolio ul li a.active,
+#portfolio ul li a:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+#portfolio ul li a.active:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+#about-me, #contact {
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me .about-me-wrapper,
+#contact .contact-wrapper {
+    max-width: 600px;
+    width: 100%;
+}
+
+#about-me {
+    color: #FFFFFF;
+    background-color: #616161;
+}
+
+#about-me .about-me-header h2,
+#contact .contact-header h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#about-me .about-me-header img {
+    width: 100%;
+}
+
+#about-me .about-me-body .about-me-details h3,
+#contact .contact-body .contact-details h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#about-me .about-me-body .about-me-details p,
+#contact .contact-body .contact-details p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#about-me .about-me-details,
+#about-me .technical-skills,
+#about-me .payments {
+    padding: 40px 0 30px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#about-me .payments {
+    border-bottom: none;
+}
+
+#about-me address {
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+#about-me .technical-skills h3,
+#about-me .payments h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+#about-me .technical-skills h4 {
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+#about-me .technical-skills .percent-bar {
+    background-color: #FFFFFF;
+}
+
+#about-me .percent-bar .percent {
+    color: #000000;
+    background-color: #9E9E9E;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+#about-me .photography .percent {
+    width: 95%;
+}
+
+#about-me .web-design .percent {
+    width: 85%;
+}
+
+#about-me .photoshop .percent {
+    width: 80%;
+}
+
+#about-me .technical-skills .btn {
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 14px 24px;
+    background-color: #FFFFFF;
+}
+
+#about-me .technical-skills .btn:hover {
+    background-color: #CCCCCC;
+}
+
+#about-me .payments .payment-wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-me .basic-payment,
+#about-me .pro-payment {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: #000000;
+    opacity: 0.8;
+}
+
+#about-me .basic-payment:hover,
+#about-me .pro-payment:hover {
+    opacity: 1;
+}
+
+#about-me .basic-payment .payment-header h4,
+#about-me .pro-payment .payment-header h4 {
+    padding: 30px 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+#about-me .payments .payment-body p,
+#about-me .payments .payment-body .btn {
+    padding: 20px 0;
+    border-bottom: 1px solid #CCCCCC;
+    text-align: center;
+    font-size: 15px;
+}
+
+#about-me .payments .payment-body p:last-child {
+    background-color: #F2F2F2;
+}
+
+#about-me .payments .payment-body .btn {
+    border-bottom: none;
+    background-color: #FFFFFF;
+    padding: 14px 24px;
+}
+
+#about-me .payments .payment-body .btn:hover {
+    background-color: #CCCCCC;
+}
+
+#about-me .payments .payment-body p strong {
+    display: block;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#about-me .payments .payment-body p small {
+    color: #666666;
+    font-size: 15px;
+}
+
+#contact .contact-header h2 {
+    margin-bottom: 0;
+}
+
+#contact p {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#contact .form-control label {
+    font-size: 15px;
+}
+
+#contact .form-control input {
+    margin: 4px 0 20px;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+}
+
+#contact .form-control input[type="submit"] {
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#contact .form-control input[type="submit"]:hover {
+    color: #000000;
+    background-color: #CCCCCC;
+}
+
+footer .row-1 {
+    padding: 50px 20px 0 20px;
+    background-color: #9E9E9E;
+    display: flex;
+}
+
+footer .row-1 .col {
+    margin: 0 5px 50px 5px;
+    flex: 1;
+}
+
+footer .row-1 h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+footer .row-1 p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+footer .row-1 .blog-post {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+footer .row-1 .blog-post:first-child {
+    padding-top: 0;
+}
+
+footer .row-1 .blog-post:last-child {
+    border-bottom: none;
+}
+
+footer .row-1 .blog-post .post-details h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+footer .row-1 img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+footer .row-1 .col-3 span {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: #616161;
+}
+
+footer .row-1 .col-3 span.popular {
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+footer .row-2 p {
+    padding: 30px 0;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #000000;
+}
+
+footer .row-2 p a {
+    color: #FFFFFF;
+}
+
+footer .row-2 p a:hover {
+    color: #777777;
+}
+
+@media screen and (max-width: 992px) {
+    body > .col-1 {
+        display: none;
+    }
+
+    body > .show-col-1 {
+        width: 100%;
+        display: flex;
+        z-index: 2;
+    }
+
+    body > .show-col-1 .sidenav-container li:first-child {
+        display: block;
+    }
+
+    body > .show-col-1 .sidenav-container {
+        width: 300px;
+        background-color: #FFFFFF;
+        animation: slide-in-effect 0.3s ease-out;
+    }
+
+    @keyframes slide-in-effect {
+        from {
+            opacity: 0;
+            margin-left: -300px;
+        }
+
+        to {
+            opacity: 1;
+            margin-left: 0;
+        }
+    }
+
+    body > .show-col-1 .close-btn-container {
+        display: block;
+        flex: 1;
+    }
+
+    body > .show-col-1 .close-btn-container .btn {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.3;
+        animation: fade-in-effect 0.3s ease-out;
+    }
+
+    @keyframes fade-in-effect {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 0.3;
+        }
+    }
+
+    .col-2 {
+        margin-left: 0;
+    }
+
+    .col-2 header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+
+    .col-2 header h1 {
+        margin-left: 15px;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .col-2 header .fa {
+        cursor: pointer;
+        padding: 12px 16px;
+        font-size: 24px
+    }
+
+    .col-2 header .fa:hover {
+        background-color: #CCCCCC;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #portfolio .photo-gallery,
+    #about-me .payments .payment-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    footer .row-1 {
+        flex-direction: column;
+    }
+}

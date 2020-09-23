@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-content-container {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}  
+
+.tab-content h3, p{
+    text-align: center;
+}
+
+.tab-headers {
+    display: flex;
+}
+
+.tablinks {
+    flex: 1;
+    background-color: #555;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    color: inherit;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #777;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
