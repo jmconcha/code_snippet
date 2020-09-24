@@ -30,3 +30,4 @@ Project Number | Project Title | Project Status | Date Created | Author
 28 | flexbox | finished | July 28, 2020 | MC
 29 | ads-manager | finished | August 4, 2020 | MC
 30 | css-grid-with-image-span | finished | August 4, 2020 | MC
+31 | calculator | finished | August 23, 2020 | MC
