@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    margin-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    font: 16px "Times New Roman";
+}
+
+h1 {
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    font: 700 42px;
+}
+
+h2 {
+    padding: 16px 0;
+}
+
+main {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.to-do-header {
+    padding: 30px 28px 30px 68px;
+    background-color: #4ACF50;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+form input:first-of-type {
+    flex: 1;
+}
+
+form input:last-of-type {
+    padding: 8px 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #DDDDDD;
+}
+
+form input:last-of-type:hover {
+    background-color: #CCCCCC;
+}
+
+form input:last-of-type:active {
+    color: #4ACF50;
+    background-color: #555555;
+}
+
+.to-do-list {
+    border: 1px solid #4ACF50;
+    border-top: none;
+}
+
+.to-do-list {
+    list-style-type: none;
+}
+
+.to-do-list ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 8px;
+    display: flex;
+}
+
+.to-do-list ul li .fa {
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+.to-do-list ul li .fa-check {
+    visibility: hidden;
+    color: #4ACF50;
+}
+
+.to-do-list ul li .fa-times {
+    font-size: 16px;
+}
+
+.to-do-list ul li .fa-times:hover {
+    color: red;
+}
+
+.to-do-list ul li span {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.to-do-list ul li:nth-child(odd) {
+    background-color: #EEEEEE;
+}
+
+.to-do-list ul li:hover {
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+
+.to-do-list ul li.checked {
+    color: #FFFFFF;
+    background-color: #888888;
+}
+
+.to-do-list ul li.checked span {
+    text-decoration: line-through;
+    text-decoration-color: #4ACF50;
+}
+
+.to-do-list ul li.checked .fa-check {
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 500px) {
+    .to-do-header {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    form input:first-of-type {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    form{
+        flex-direction: column;
+    }
+
+    form input:first-of-type {
+        width: initial;
+        margin-bottom: 8px;
+    }
+}
