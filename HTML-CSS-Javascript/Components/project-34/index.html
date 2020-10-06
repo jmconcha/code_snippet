@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <main>
+        <header class="row row-1">
+            <h1>Word Winner</h1>
+            <h2>Type It! To Win It!</h2>
+        </header>
+
+        <div class="row row-2">
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <p>Type each word and you will be rewarded one point. </p>
+                <p>You have 4 seconds to type the word or else, <strong>GAME OVER!</strong></p>
+                <p>Hurry! Time is ticking!</p>
+            </div>
+
+            <div class="wrapper">
+                <div class="game">
+                    <h2 class="word">Click <span style="color: #4ACF50;">Start</span></h2>
+
+                    <p class="game-status"></p>
+
+                    <input id="wordInputField" type="text" autofocus>
+
+                    <button class="btn">Start</button>
+
+                    <div class="time-and-score">
+                        <h3>Time Left: <span class="time-left">0</span></h3>
+                        <h3>Score: <span class="score">0</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html> 

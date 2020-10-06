@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    background-color: #000000;
+    font: 16px Arial, sans-serif;
+    background-image: url('../images/mac.jpg');
+    background-size: cover;
+}
+
+main .row-1 {
+    border: 1px solid #4ACF50;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.row-1 h1 {
+    color: #4ACF50;
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+main .row-2 {
+    height: calc(100vh - 154px);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.row-2 > div {
+    border: 1px solid #4ACF50;
+    padding: 40px 20px;
+}
+
+.instructions p {
+    margin: 16px 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.instructions strong {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.game {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game .word {
+    height: 92px;
+    font-size: 80px;
+    user-select: none;
+}
+
+.game .game-status {
+    height: 33px;
+    margin: 12px 0;
+    font-size: 30px;
+}
+
+.game input, .game .btn {
+    outline: none;
+    width: 100%;
+    margin: 4px 0;
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.game .btn {
+    cursor: pointer
+}
+
+.game .btn:hover {
+    color: #FFFFFF;
+    background-color: #4ACF50;
+}
+
+.game .time-and-score {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.game .time-and-score > h3 {
+    flex: 1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
