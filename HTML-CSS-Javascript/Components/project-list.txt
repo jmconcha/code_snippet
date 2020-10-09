@@ -34,3 +34,4 @@ Project Number | Project Title | Project Status | Date Created | Author
 32 | hover-animation | finished | August 25, 2020 | MC
 33 | to-do-list | finished | August 28, 2020 | MC
 34 | word-winner | finished | October 2, 2020 | MC
+35 | book-marker | finished | October 8, 2020 | MC

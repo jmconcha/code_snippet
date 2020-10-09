@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-size: 16px;
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #CCCCCC;
+}
+
+.sidebar header {
+    padding: 8px 6px;
+}
+
+.sidebar header h2 {
+    font-size: 2rem;
+}
+
+.bookmark-list li {
+    position: relative;
+    height: 58px;
+    padding: 8px 6px;
+}
+
+.bookmark-list li:hover {
+    background-color: #DDDDDD;
+}
+
+.bookmark-list li h2 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.bookmark-list li .remove-bookmark {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.bookmark-list li .remove-bookmark:hover {
+    color: red;
+}
+
+.bookmark-list li a {
+    display: inline-block;
+    color: #000000;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    font: 0.9rem Arial, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bookmark-list li a:hover {
+    position: absolute;
+    left: 6px;
+    bottom: 8px;
+    color: blue;
+    overflow-x: visible;
+    text-overflow: inherit;
+}
+main {
+    width: 70%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDDDD;
+}
+
+.bookmark-container {
+    padding: 30px 40px;
+    background-color: #CCCCCC;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    margin-bottom: 6px;
+    font: 1rem Arial, sans-serif;
+}
+
+.form-control input {
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.form-control input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+.form-control input[type="submit"]:hover {
+    color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    background-color: blue;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <header>
+            <h2>Bookmark</h2>
+        </header>
+        <ul class="bookmark-list"></ul>
+    </div>
+    
+    <main>
+        <div class="bookmark-container">
+        <header>
+            <h1>Bookmark Marker</h1>
+        </header>
+            <form id="bookmarkForm" autocomplete="off">
+                <div class="form-control">
+                    <label for="domainName">Name</label>
+                    <input id="domainName" type="text" required>
+                </div>
+
+                <div class="form-control">
+                    <label for="url">URL</label>
+                    <input id="url" type="text" required>
+                </div>
+
+                <div class="form-control">
+                    <input type="submit" value="Save Bookmark">
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
