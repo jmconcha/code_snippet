@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #777;
+    font: 16px Arial, sans-serif;
+}
+
+#pomodoroTimer {
+    margin: 0 20px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.blink {
+    animation: blink-effect 0.6s ease-in infinite;
+}
+
+@keyframes blink-effect {
+    from {
+        border: 4px solid transparent;
+        background-color: transparent;
+    }
+
+    to {
+        border: 4px solid #4ACF50;
+        background-color: #4ACF50;
+    }
+}
+
+header {
+    display: flex;
+}
+
+header > .btn {
+    margin-right: 4px;
+    outline: none;
+    flex: 1;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: #333333;
+}
+
+header > .btn:last-of-type {
+    margin-right: 0;
+}
+
+header > .btn:hover {
+    background-color: #000;
+}
+
+header > .btn:active {
+    transform: scale(0.98, 0.98);
+}
+
+.content {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 500px;
+    height: 100vh;
+    background: url('../images/workbench.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.content p {
+    visibility: hidden;
+    padding: 10px 20px;
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    background-color: rgba(245, 222, 179, 0.6);
+}
+
+.blink-p {
+    animation: blink-effect-p 0.6s ease-in infinite;
+}
+
+@keyframes blink-effect-p {
+    from {
+        border: 4px solid transparent;
+    }
+
+    to {
+        border: 4px solid #4ACF50;
+    }
+}
+
+.content h1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 7rem;
+}
+
+.content > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content > div:last-of-type {
+    align-items: flex-start;
+}
+
+.content .btn {
+    visibility: hidden;
+    outline: none;
+    font-size: 4rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.content .btn:active {
+    transform: scale(0.90, 0.90)
+}
