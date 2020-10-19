@@ -38,3 +38,4 @@ Project Number | Project Title | Project Status | Date Created | Author
 36 | digital-clock | finished | October 9, 2020 | MC
 37 | pomodoro-timer | finished | October 12, 2020 | MC
 38 | memory-game | finished | October 13, 2020 | MC
+39 | bouncing-balls | finished | October 16, 2020 | MC
