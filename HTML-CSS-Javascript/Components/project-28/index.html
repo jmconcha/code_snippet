@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Flexbox</title>
-<style type="text/css">
-	* {
-		box-sizing: border-box;
-	}
-	body {
-		margin: 0;
-	}
-	.flex-container {
-		display: flex;
-		border: 1px solid black;
-		justify-content: center;
-		align-items: baseline;
-	}
-	.flex-container > .box {
-		border: 1px solid #ccc;
-		padding: 30px;
-		text-align: center;
-		flex-basis: 30%;
-	}
-</style>
+	<title>Flexbox</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		.flex-container {
+			display: flex;
+			border: 1px solid black;
+			justify-content: center;
+			align-items: baseline;
+		}
+
+		.flex-container>.box {
+			border: 1px solid #ccc;
+			padding: 30px;
+			text-align: center;
+			flex-basis: 30%;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="flex-container">
 		<div class="box one">
@@ -57,4 +62,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

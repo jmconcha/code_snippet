@@ -1,5 +1,6 @@
 Date Created: July 28, 2020
 Author: MC
+Project Title: blog-cards
 Project Details: I created a blog cards that can be used for blog posts.
 
 Technology Used

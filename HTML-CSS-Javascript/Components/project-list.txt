@@ -3,7 +3,7 @@ Project Number | Project Title | Project Status | Date Created | Author
 1 | ball | finished | May 1, 2020 | MC
 2 | progress-bar | finished | May 5, 2020 | MC
 3 | links | finished | May 6, 2020 | MC
-4 | tables | finished | May 6, 2020 | MC
+4 | table | finished | May 6, 2020 | MC
 5 | displays | finished | May 6, 2020 | MC
 6 | centered-text | finished | May 6, 2020 | MC
 7 | image-gallery | finished | May 11, 2020 | MC
@@ -30,12 +30,4 @@ Project Number | Project Title | Project Status | Date Created | Author
 28 | flexbox | finished | July 28, 2020 | MC
 29 | ads-manager | finished | August 4, 2020 | MC
 30 | css-grid-with-image-span | finished | August 4, 2020 | MC
-31 | calculator | finished | August 23, 2020 | MC
-32 | hover-animation | finished | August 25, 2020 | MC
-33 | to-do-list | finished | August 28, 2020 | MC
-34 | word-winner | finished | October 2, 2020 | MC
-35 | book-marker | finished | October 8, 2020 | MC
-36 | digital-clock | finished | October 9, 2020 | MC
-37 | pomodoro-timer | finished | October 12, 2020 | MC
-38 | memory-game | finished | October 13, 2020 | MC
-39 | bouncing-balls | finished | October 16, 2020 | MC
+31 | hover-animation | finished | August 25, 2020 | MC
