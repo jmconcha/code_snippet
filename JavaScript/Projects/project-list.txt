@@ -7,3 +7,4 @@ Project Number | Project Title | Project Status | Date Created | Author
 5 | pomodoro-timer | finished | October 12, 2020 | MC
 6 | memory-game | finished | October 13, 2020 | MC
 7 | bouncing-balls | finished | October 16, 2020 | MC
+8 | drawing-book | finished | October 19, 2020 | MC

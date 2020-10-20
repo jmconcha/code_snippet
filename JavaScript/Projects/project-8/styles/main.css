@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    background-color: #F1F1F1;
+    font: 16px Arial, sans-serif;
+}
+
+main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawing-toolbar {
+    display: flex;
+    background-color: #CCCCCC;
+    border-bottom: 1px solid black;
+}
+
+.drawing-toolbar > div {
+    background-color: #F2F2F2;
+    border-right: 1px solid black;
+}
+
+.drawing-toolbar .eraser,
+.drawing-toolbar .pencil {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.drawing-toolbar > div:first-of-type {
+    display: flex;
+}
+
+.drawing-toolbar > div:last-of-type {
+    border-right: none;
+}
+
+.drawing-toolbar > div:first-of-type > span {
+    width: 20px;
+}
+
+.drawing-toolbar .pencil-tool span {
+    padding: 0 6px 0 20px;
+}
+
+.drawing-toolbar .pencil-tool input {
+    width: 100px;
+    outline: none;
+    padding: 4px 8px;
+    font-size: 1em;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+canvas {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+canvas:hover {
+    cursor: url('../cursors/blue-pencil.cur'), auto;
+}
