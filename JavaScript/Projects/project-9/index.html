@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Countdown Timer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    
+    <main>
+        <header>
+            <h1>Countdown Timer</h1>
+        </header>
+
+        <div class="time">
+            <div class="form-control">
+                <label for="hoursField">Hours</label>
+                <input id="hoursField" class="hours" type="number" min="0" max="24" value="00">
+            </div>
+
+            <span>:</span>
+
+            <div class="form-control">
+                <label for="minutesField">Minutes</label>
+                <input id="minutesField" class="minutes" type="number" min="0" max="60" value="00">
+            </div>
+
+
+            <span>:</span>
+
+            <div class="form-control">
+                <label for="secondsField">Seconds</label>
+                <input id="secondsField" class="seconds"type="number" min="0" max="60" value="00">    
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-start">Start</button>
+            <button class="btn btn-stop">Stop</button>
+        </div>
+    </main>
+
+    <div class="modal">
+        <p>
+            <span></span>
+            <button class="btn btn-close-message">&times;</button>
+        </p>
+    </div>
+
+</body>
+
+</html>
