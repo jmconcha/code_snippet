@@ -32,26 +32,26 @@ window.addEventListener('load', function () {
             this.y += Math.sin(this.direction) * this.speed;
 
             if (this.x - this.radius < 0) {
-                this.x = radius;
+                this.x = this.radius;
 
                 this.direction = Math.atan2(Math.sin(this.direction),
                     Math.cos(this.direction) * -1);
             }
             else if (this.x + this.radius > width) {
-                this.x = width - radius;
+                this.x = width - this.radius;
 
                 this.direction = Math.atan2(Math.sin(this.direction),
                     Math.cos(this.direction) * -1);
             }
 
             if (this.y - this.radius < 0) {
-                this.y = radius;
+                this.y = this.radius;
 
                 this.direction = Math.atan2(Math.sin(this.direction) * -1,
                     Math.cos(this.direction));
             }
             else if (this.y + this.radius > height) {
-                this.y = height - radius;
+                this.y = height - this.radius;
 
                 this.direction = Math.atan2(Math.sin(this.direction) * -1,
                     Math.cos(this.direction));
@@ -99,7 +99,7 @@ window.addEventListener('load', function () {
             ${((Math.random() * 5) + 5) / 10})`;
     }
 
-    function setCanvasWidth() {
+    function setCanvasDimension() {
         width = window.innerWidth;
         height = window.innerHeight;
 
@@ -109,8 +109,8 @@ window.addEventListener('load', function () {
 
 
     c.canvas.addEventListener('click', function explodeBalls(event) {
-        generateBalls(event.clientX, event.clientY);
-        animate();
+        c.canvas.removeEventListener('click', explodeBalls);
+        c.canvas.style.cursor = 'auto';
 
         setInterval(function () {
             let randRadius = getRandInt(minRadius, maxRadius);
@@ -123,7 +123,8 @@ window.addEventListener('load', function () {
                     randRadius));
         }, 500);
 
-        c.canvas.removeEventListener('click', explodeBalls);
+        generateBalls(event.clientX, event.clientY);
+        animate();
     });
 
     c.canvas.addEventListener('mousemove', function(event) {
@@ -131,11 +132,7 @@ window.addEventListener('load', function () {
         mousePosY = event.clientY;
     });
 
-    window.addEventListener('resize', function () {
-        setCanvasWidth();
-        console.log(width);
-        console.log(height);
-    });
+    window.addEventListener('resize', setCanvasDimension);
 
-    setCanvasWidth();
+    setCanvasDimension();
 });
