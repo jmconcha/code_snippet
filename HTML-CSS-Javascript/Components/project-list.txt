@@ -31,3 +31,4 @@ Project Number | Project Title | Project Status | Date Created | Author
 29 | ads-manager | finished | August 4, 2020 | MC
 30 | css-grid-with-image-span | finished | August 4, 2020 | MC
 31 | hover-animation | finished | August 25, 2020 | MC
+32 | slideshow-gallery | finished | October 30, 2020 | MC

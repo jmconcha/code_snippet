@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    font: 1rem Arial, sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.gallery .slideshow {
+    position: relative;
+}
+
+.gallery .slideshow .image-count {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.8rem;
+}
+
+.gallery .slideshow .control {
+    padding: 20px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50% );
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gallery .slideshow .control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery .slideshow .control:active {
+    padding: 20px 10px;
+}
+
+.gallery .slideshow .prev {
+    left: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.gallery .slideshow .next {
+    right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.gallery .title {
+    padding: 16px;
+    text-align: center;
+    background-color: #222222;
+    font-size: 0.96rem;
+}
+
+.gallery .image-preview {
+    display: flex;
+}
+
+.gallery .image-preview > div {
+    flex: 1;
+}
+
+.gallery .image-preview > div img {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.gallery .image-preview > div img:hover,
+.gallery .image-preview > div img.active {
+    opacity: 1;
+}
+
