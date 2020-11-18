@@ -1,12 +1,12 @@
 Project Number | Project Title | Project Status | Date Created | Author
-0 | calculator | finished | August 23, 2020 | MC
-1 | to-do-list | finished | August 28, 2020 | MC
-2 | word-winner | finished | October 2, 2020 | MC
-3 | book-marker | finished | October 8, 2020 | MC
-4 | digital-clock | finished | October 9, 2020 | MC
-5 | pomodoro-timer | finished | October 12, 2020 | MC
-6 | memory-game | finished | October 13, 2020 | MC
-7 | bouncing-balls | finished | October 16, 2020 | MC
-8 | drawing-book | finished | October 19, 2020 | MC
-9 | countdown-timer | finished | October 24, 2020 | MC
-10 | form-validation | unfinished | November 10, 2020 | MC
+1 | calculator | finished | August 23, 2020 | MC
+2 | to-do-list | finished | August 28, 2020 | MC
+3 | word-winner | finished | October 2, 2020 | MC
+4 | book-marker | finished | October 8, 2020 | MC
+5 | digital-clock | finished | October 9, 2020 | MC
+6 | pomodoro-timer | finished | October 12, 2020 | MC
+7 | memory-game | finished | October 13, 2020 | MC
+8 | bouncing-balls | finished | October 16, 2020 | MC
+9 | drawing-book | finished | October 19, 2020 | MC
+10 | countdown-timer | finished | October 24, 2020 | MC
+11 | form-validation | unfinished | November 10, 2020 | MC
