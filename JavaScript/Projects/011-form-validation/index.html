@@ -5,6 +5,7 @@
     <title>Form Validation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/countries.js"></script>
     <script src="./scripts/main.js" defer></script>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
@@ -12,7 +13,7 @@
 <body>
 
     <div class="form-container">
-        <form action="" method="" autocomplete="off">
+        <form id ="registerForm" action="" method="" autocomplete="off">
             <div class="form-group">
                 <label for="userId">User id: </label>
                 <input type="text" minlength="5" maxlength="12" class="form-control" id="userId" required autofocus>
@@ -20,12 +21,12 @@
 
             <div class="form-group">
                 <label for="userPassword">Password: </label>
-                <input type="Password:" minlength="7" maxlength="12" class="form-control" id="userPassword" required>
+                <input type="password" minlength="7" maxlength="12" class="form-control" id="userPassword" required>
             </div>
 
             <div class="form-group">
                 <label for="fullName">Full Name: </label>
-                <input type="text" class="form-control" id="fullName" required>
+                <input type="text" class="form-control" id="fullName" pattern="[A-Za-z ]*" required>
             </div>
 
             <div class="form-group">
@@ -42,7 +43,7 @@
 
             <div class="form-group">
                 <label for="zipCode">ZIP Code: </label>
-                <input type="text" class="form-control" id="zipCode" required>
+                <input type="text" class="form-control" id="zipCode" pattern="[0-9]*" required>
             </div>
 
             <div class="form-group">
@@ -65,9 +66,9 @@
                 <label>Language: </label>
 
                 <div class="form-control">
-                    <input type="checkbox" name="language" id="english">
+                    <input type="radio" name="language" id="english" required>
                     <label for="english">English</label>
-                    <input type="checkbox" name="language" id="nonEnglish">
+                    <input type="radio" name="language" id="nonEnglish" required>
                     <label for="nonEnglish">Non English</label>
                 </div>
             </div>
