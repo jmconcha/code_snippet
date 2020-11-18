@@ -13,6 +13,3 @@ Project Number | Project Title | Project Status | Date Created | Author
 11 | wedding-invitation | finished | August 20, 2020 | MC
 12 | photo | finished | August 21, 2020 | MC
 13 | black-and-white | finished | August 22, 2020 | MC
-14 | photo-portfolio | finished | August 22, 2020 | MC
-15 | nature-portfolio | finished | August 22, 2020 | MC
-16 | people-portfolio | finished | September 12, 2020 | MC

@@ -1,2 +1,5 @@
 Project Number | Project Title | Project Status | Date Created | Author
 0 | portfolio | finished |  | MC
+1 | photo-portfolio | finished | August 22, 2020 | MC
+2 | nature-portfolio | finished | August 22, 2020 | MC
+3 | people-portfolio | finished | September 12, 2020 | MC
