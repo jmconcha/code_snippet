@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    background-color: #FFFFFF;
+    font: 1rem Arial, sans-serif;
+}
+
+.blog-posts {
+    padding: 10px;
+    margin: 20px auto;
+    width: 500px;
+    height: 250px;
+    border: 1px solid #CCCCCC;
+}
+
+.blog-posts .post {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 130px;
+    animation: animate 1s linear infinite forwards;
+}
+
+.blog-posts .post .mask {
+    position: absolute;
+    height: 10px;
+    background-color: #FFFFFF;
+}
+
+.blog-posts .post .mask-1 {
+    top: 0;
+    left: 60px;
+    width: 420px;
+    height: 20px;
+}
+
+.blog-posts .post .mask-2 {
+    top: 20px;
+    left: 60px;
+    width: 20px;
+}
+
+.blog-posts .post .mask-3 {
+    top: 20px;
+    left: 348px;
+    width: 132px;
+}
+
+.blog-posts .post .mask-4 {
+    top: 30px;
+    left: 60px;
+    width: 420px;
+}
+
+.blog-posts .post .mask-5 {
+    top: 40px;
+    left: 60px;
+    width: 20px;
+}
+
+.blog-posts .post .mask-6 {
+    top: 40px;
+    left: 300px;
+    width: 180px;
+}
+
+.blog-posts .post .mask-7 {
+    top: 50px;
+    left: 60px;
+    width: 420px;
+}
+
+.blog-posts .post .mask-8 {
+    top: 60px;
+    left: 0;
+    width: 480px;
+    height: 20px;
+}
+
+.blog-posts .post .mask-9 {
+    top: 80px;
+    width: 180px;
+    left: 300px;
+}
+
+.blog-posts .post .mask-10 {
+    top: 90px;
+    left: 0;
+    width: 480px;
+}
+
+.blog-posts .post .mask-11 {
+    top: 100px;
+    left: 380px;
+    width: 100px;
+}
+
+.blog-posts .post .mask-12 {
+    top: 110px;
+    left: 0;
+    width: 480px;
+}
+
+.blog-posts .post .mask-13 {
+    top: 120px;
+    left: 340px;
+    width: 140px;
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
