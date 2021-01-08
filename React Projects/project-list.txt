@@ -1,0 +1,8 @@
+Project Number | Project Title | Project Status | Date Created | Author
+1 | clock | finished | NR | MC
+2 | to-do-list | finished | NR | MC
+3 | tic-tac-toe | finished | NR | MC
+4 | voting-app | finished | December 2020 | MC
+5 | time-tracking-app | finished | December 2020 | MC
+6 | calculator | unfinished | January 4, 2021 | MC
+7 | todo-app-with-redux | unfinished | January 8, 2021 | MC

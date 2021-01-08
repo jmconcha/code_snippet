@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #000000;
+	background-color: #FFFFFF;
+	font: 1rem Arial, sans-serif;
+}
+
+button, li {
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#root {
+	padding: 30px 0;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.TodoApp {
+	max-width: 300px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.TodoApp > div {
+	flex: 1;
+}
+
+.TodoForm form {
+	display: flex;
+}
+
+.TodoForm form input {
+	padding: 4px 8px;
+	flex: 2;
+	font-size: 1rem;
+}
+
+.TodoForm form button {
+	flex: 1;
+	font-size: 1rem;
+}
+
+.TodoFilter {
+	display: flex;
+	padding: 8px;
+}
+
+.TodoFilter button {
+	padding: 4px;
+	flex: 1;
+	font-size: 0.9rem;
+}
+
+.FilterableTodoList {
+	text-align: center;
+}
+
+.FilterableTodoList li {
+	padding: 4px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
