@@ -5,4 +5,5 @@ Project Number | Project Title | Project Status | Date Created | Author
 4 | voting-app | finished | December 2020 | MC
 5 | time-tracking-app | finished | December 2020 | MC
 6 | calculator | unfinished | January 4, 2021 | MC
-7 | todo-app-with-redux | unfinished | January 8, 2021 | MC
+7 | todo-app-with-redux | finished | January 8, 2021 | MC
+8 | chat-app-with-redux | finished | January 19, 2021 | MC
