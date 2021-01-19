@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
+import { openThread, addMessage, deleteMessage } from './actions.js';
+import { formatTime } from './helpers.js';
 import './styles.css';
 
 const Tabs = ({ tabs, onClick }) => (
@@ -31,10 +32,7 @@ const mapStateToTabsProps = (state) => {
 
 const mapDispatchToTabsProps = (dispatch) => ({
 	onClick: (id) => {
-		dispatch({
-			type: 'OPEN_THREAD',
-			id,
-		})
+		dispatch(openThread(id));
 	},
 });
 
@@ -52,7 +50,7 @@ const MessageList = ({ messages, onClick }) => (
 					onClick={() => onClick(m.id)}
 				>
 					{m.text}
-					<span className="metadata">@{m.timestamp}</span>
+					<span className="metadata">{formatTime(m.timestamp)}</span>
 				</p>
 			))
 		}
@@ -118,20 +116,14 @@ const mapDispatchToThreadProps = (dispatch) => ({ dispatch });
 const mergeThreadProps = (stateProps, dispatchProps) => ({
 	...stateProps.stateToThreadProps,
 	onMessageClick: (id) => {
-		dispatchProps.dispatch({
-			type: 'DELETE_MESSAGE',
-			threadId: stateProps.activeThreadId,
-			id,
-		});
+		dispatchProps.dispatch(
+			deleteMessage(stateProps.activeThreadId, id)
+		);
 	},
 	onTextFieldSubmit: (text) => {
-		dispatchProps.dispatch({
-			type: 'ADD_MESSAGE',
-			threadId: stateProps.activeThreadId,
-			id: uuidv4(),
-			timestamp: Date.now(),
-			text,
-		});
+		dispatchProps.dispatch(
+			addMessage(stateProps.activeThreadId, text)
+		);
 	},
 });
 

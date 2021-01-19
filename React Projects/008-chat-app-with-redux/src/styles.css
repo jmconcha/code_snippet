@@ -70,6 +70,7 @@ h1 {
 .thread-messages p {
 	margin: 10px 0;
 	cursor: default;
+	word-wrap: break-word;
 }
 
 .thread-messages .metadata {
