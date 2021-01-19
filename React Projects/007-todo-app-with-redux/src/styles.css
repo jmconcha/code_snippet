@@ -53,7 +53,7 @@ ul {
 
 .TodoFilter {
 	display: flex;
-	padding: 8px;
+	padding: 8px 0;
 }
 
 .TodoFilter button {
@@ -70,4 +70,38 @@ ul {
 	padding: 4px;
 	font-weight: 600;
 	letter-spacing: 1px;
+	user-select: none;
 }
+
+.FilterableTodoList li.completed {
+	color: #4ACF50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

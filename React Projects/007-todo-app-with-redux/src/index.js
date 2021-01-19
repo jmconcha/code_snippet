@@ -1,8 +1,12 @@
-const { createStore } = Redux;
-const { combineReducers } = Redux;
-const { Component } = React;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { v4 as uuidv4 } from 'uuid';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { Provider, connect } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import logger from 'redux-logger';
 
-const todo = (state, action) => {
+const todo = (state = {}, action) => {
 	switch (action.type) {
 		case 'ADD_TODO':
 			return {
@@ -11,17 +15,16 @@ const todo = (state, action) => {
 				completed: false
 			};
 		case 'TOGGLE_TODO':
-				if (state.id === action.id) {
-					return { 
-						...state, completed: 
-						!state.completed 
-					};
-				}
-				return state;
+			if (state.id === action.id) {
+				return {
+					...state,
+					completed: !state.completed
+				};
+			}
+			return state;
 		default:
 			return state;
 	}
-
 };
 
 const todos = (state = [], action) => {
@@ -44,129 +47,225 @@ const visibilityFilter = (state = 'SHOW_ALL', action) => {
 			return action.filter;
 		default:
 			return state;
+	}
+};
+const todoApp = combineReducers({ todos, visibilityFilter });
+
+const getVisibleTodos = (todos, filter) => {
+	switch (filter) {
+		case 'SHOW_ALL':
+			return todos;
+		case 'SHOW_COMPLETED':
+			return todos.filter(t => t.completed);
+		case 'SHOW_ACTIVE':
+			return todos.filter(t => !t.completed);
+		default:
+			return todos;
+	}
+};
+
+const setVisibilityFilter = (filter) => {
+	return {
+		type: 'SET_VISIBILITY_FILTER',
+		filter
 	};
 };
 
-const ListItem = ({ text, completed }) => {
-	if (completed) {
+const toggleTodo = (id) => {
+	return {
+		type: 'TOGGLE_TODO',
+		id
+	};
+};
+
+const addTodo = (text) => {
+	return {
+		type: 'ADD_TODO',
+		id: uuidv4(),
+		text
+	}
+};
+
+const Link = ({ active, onClick, children }) => {
+	if (active) {
 		return (
-			<li><del>{text}</del></li>
+			<span>
+				{children}
+			</span>
 		);
 	}
 
 	return (
-		<li>{text}</li>
+		<a href="#" onClick={e => {
+			e.preventDefault();
+			onClick();
+		}}>
+			{children}
+		</a>
 	);
+
 };
 
-const FilterableTodoList = ({ todos }) => {
-	const todoList = todos.map(todo =>
-		<ListItem
-			key={todo.id}
-			text={todo.text}
-			completed={todo.completed}
-		/>
-	);
-
-	return (
-		<div className="FilterableTodoList">
-			<ul>{todoList}</ul>
-		</div>
-	);
+const mapStateToLinkProps = (state, ownProps) => {
+	return {
+		active: ownProps.filter === state.visibilityFilter
+	};
 };
 
-const TodoFilter = () => {
-	return (
-		<div className="TodoFilter">
-			<button>Show all</button>
-			<button>Show Completed</button>
-		</div>
-	);
-};
-
-let id = 0;
-class TodoForm extends Component {
-	constructor(props) {
-		super(props);
-		this.handleFormSubmit = this.handleFormSubmit.bind(this);
-	}
-
-	handleFormSubmit(e) {
-		e.preventDefault();
-		const text = this.inputRef.value;
-		if (!text) {
-			return;
+const mapDispatchToLinkProps = (dispatch, ownProps) => {
+	return {
+		onClick: () => {
+			dispatch(
+				setVisibilityFilter(ownProps.filter)
+			)
 		}
-
-		const action = {
-			type: 'ADD_TODO',
-			id: id++,
-			text
-		};
-		store.dispatch(action);
 	};
-
-	render() {
-		return (
-			<div className="TodoForm">
-				<form onSubmit={this.handleFormSubmit}>
-					<input 
-						type="text"
-						ref={node => this.inputRef = node}
-					/>
-					<button type="submit">Add</button>
-				</form>
-			</div>
-		);
-	}
 };
 
-const TodoApp = ({ state }) => {
+const FilterLink = connect(
+	mapStateToLinkProps,
+	mapDispatchToLinkProps
+)(Link);
+
+const Todo = ({ onClick, text, completed }) => {
 	return (
-		<div className="TodoApp">
-			<TodoForm />
-			<TodoFilter />
-			<FilterableTodoList 
-				todos={state.todos}
-				visibilityFilter={state.visibilityFilter}
+		<li 
+			onClick={onClick}
+			style={{
+				textDecoration: completed ? 'line-through' : 'none'
+			}}
+		>
+			{text}
+		</li>
+	);
+};
+
+let AddTodo = ({ dispatch }) => {
+	let input;
+
+	return (
+		<div>
+			<input 
+				ref={node => input = node}
 			/>
+			<button onClick={() => {
+				dispatch(
+					addTodo(input.value)
+				);
+				input.value = '';
+			}}>
+				Add Todo
+			</button>
 		</div>
 	);
 };
+AddTodo = connect()(AddTodo);
 
-/*const state = {
-	todos: [
-		{
-			id: 0,
-			text: 'Learn React',
-			completed: true
-		}, 
-		{
-			id: 1,
-			text: 'React Developer',
-			completed: false
-		}
-
-	],
-	visibilityFilter: 'SHOW_ALL'
-};*/
-
-const render = () => {
-	ReactDOM.render(
-		<TodoApp 
-			state={store.getState()}
-		/>,
-		document.getElementById('root')
+const TodoList = ({ todos, onTodoClick }) => {
+	return (
+		<ul>
+			{todos.map(todo => 
+				<Todo 
+					key={todo.id}
+					onClick={() => onTodoClick(todo.id)}
+					{...todo}
+				/>
+			)}
+		</ul>
 	);
 };
 
-const todoApp = combineReducers({
-	todos,
-	visibilityFilter
-});
-const store = createStore(todoApp);
-store.subscribe(render);
-render();
+const mapStateToTodoListProps = (state) => {
+	return {
+		todos: getVisibleTodos(state.todos, state.visibilityFilter)
+	};
+};
+
+const mapDispatchToTodoListProps = (dispatch) => {
+	return {
+		onTodoClick: (id) => {
+			dispatch(
+				toggleTodo(id)
+			)
+		}	
+	};
+};
+
+const VisibleTodoList = connect(
+	mapStateToTodoListProps,
+	mapDispatchToTodoListProps
+)(TodoList);
+
+const Footer = ({ 
+	visibilityFilter, 
+	onFilterClick 
+}) => {
+	return (
+		<p>
+			Show: 
+			{' '}
+			<FilterLink 
+				filter="SHOW_ALL"
+			>
+				All
+			</FilterLink>
+			{', '}
+			<FilterLink 
+				filter="SHOW_COMPLETED"
+			>
+				Completed
+			</FilterLink>
+			{', '}
+			<FilterLink 
+				filter="SHOW_ACTIVE"
+			>
+				Active
+			</FilterLink>
+		</p>
+	);
+};
+
+const TodoApp = () => {
+	return (
+		<div>
+			<AddTodo />
+			<VisibleTodoList />
+			<Footer />
+		</div>
+	);
+}
+
+ReactDOM.render(
+	<Provider 
+		store={
+			createStore(
+				todoApp,
+				composeWithDevTools(
+					applyMiddleware(logger)
+				)
+			)
+		}
+	>
+		<TodoApp />
+	</Provider>,
+	document.getElementById('root')
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
