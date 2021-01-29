@@ -1,23 +1,3 @@
-function newTimer(attrs = {}) {
-	const timer = {
-		title: attrs.title || 'Timer',
-		project: attrs.project || 'Project',
-		id: uuid.v4(), //eslint-disable-line no-undef
-		elapsed: 0
-	};
-
-	return timer;
-}
-
-function findById(array, id, cb) {
-	array.forEach((el) => {
-		if (el.id === id) {
-			cb(el);
-			return;
-		}
-	});
-}
-
 function renderElapsedString(elapsed, runningSince) {
 	let totalElapsed = elapsed;
 	if (runningSince) {
@@ -46,16 +26,9 @@ function pad(numberString, size) {
 	return padded;
 }
 
-function deepCopy(obj) {
-	return obj.map(el => ({...el}));
-}
-
 const helpers = {
-	newTimer,
 	millisecondsToHuman,
-	findById,
 	renderElapsedString,
-	deepCopy
 };
 
 export default helpers;
