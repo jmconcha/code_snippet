@@ -1,0 +1,207 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.timers-dashboard {
+	padding: 14px;
+	margin: 50px 0;
+	max-width: 300px;
+	width: 100%;
+}
+
+.timers-dashboard .toggleable-timer-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.toggleable-timer-form .btn-create-timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: rgba(0,0,0,0.8);
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	border-radius: 5px;
+}
+
+.editable-timer-list .timer {
+	margin-bottom: 20px;
+}
+
+.timer .todo-info {
+	padding: 14px;
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.todo-info .title {
+	font-size: 1.12rem;
+}
+
+.todo-info .project {
+	display: block;
+	margin: 4px 0;
+	color: rgba(34, 36, 38, 0.4);
+	font-size: 0.87rem;
+}
+
+.todo-info .elapsed {
+	margin: 14px 0;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: rgba(0,0,0,0.68);
+}
+
+.todo-info .controls {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.todo-info .controls .fa {
+	font-size: 0.8rem;
+	color: rgba(0,0,0,0.8);
+}
+
+.todo-info .controls .fa-edit:hover {
+	color: #21BA45;
+}
+
+.todo-info .controls .fa-trash-alt:hover {
+	color: #DB2828;
+}
+
+.todo-info .controls button:first-of-type {
+	margin-left: 8px;
+}
+
+.timer .footer .controls button {
+	width: 100%;
+	padding: 8px;
+	font-size: 0.87rem;
+	border-radius: 0 0 5px 5px;
+}
+
+.timer-form {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 14px;
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	border-radius: 5px;
+}
+
+.timer-form .form-group {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	margin-bottom: 8px;
+	font-size: 0.81rem;
+	font-weight: bold;
+}
+
+.form-group .form-control {
+	outline: none;
+	padding: 8px;
+	display: block;
+	width: 100%;
+	font-size: 0.87rem;
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	border-radius: 5px;
+}
+
+.form-group .form-control:focus {
+	border: 1px solid #85B7D9;
+}
+
+.timer-form .controls {
+	margin-top: 8px;
+	display: flex;
+}
+
+.timer-form .controls button {
+	flex: 1;
+	padding: 8px;
+	font-size: 0.87rem;
+}
+
+.timer-form .controls button:first-of-type {
+	border-right: none !important;
+	border-bottom-left-radius: 5px;
+}
+
+.timer-form .controls button:last-of-type {
+	border-bottom-right-radius: 5px;
+}
+
+.btn-green {
+	color: #21BA45;
+	border: 1px solid #21BA45;
+}
+
+.btn-green:hover {
+	color: #FFFFFF;
+	background-color: #21BA45;
+	border: 1px solid #21BA45;
+}
+
+.btn-blue {
+	color: #2185D0;
+	border: 1px solid #2185D0;
+}
+
+.btn-blue:hover {
+	color: #FFFFFF;
+	background-color: #2185D0;
+	border: 1px solid #2185D0;
+}
+
+.btn-red {
+	color: #DB2828;
+	border: 1px solid #DB2828;
+}
+
+.btn-red:hover {
+	color: #FFFFFF;
+	background-color: #DB2828;
+	border: 1px solid #DB2828;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "time-tracking-app-with-firestore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,8 @@
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
     "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "firebase": "^8.2.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
